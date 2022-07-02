@@ -43,23 +43,27 @@ img {
     margin: 60 px 0 30px 0;
 }
 
-
-input {
-    width: 400px;
-    height: 50px;
-    margin: 20px;
-    border: none;
-    border-radius: 30px;
-    font-family: "Corbel", sans-serif;
-    text-align: center;
-    font-size: 1.3 em;
-}
-
 a {
     font-family: "Corbel";
     font-size: 20px;
     color: #f98643; 
   }
+
+input {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  border: outset;
+  border-radius: 30px;
+  font-family: "Corbel", sans-serif;
+  text-align: center;
+  font-size: 28px;
+}
+  
+.inputs {  
+  float: left;
+  display: inline;
+}
 
 /* Style the navigation menu */
 .navbar {
