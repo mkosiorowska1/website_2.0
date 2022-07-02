@@ -13,6 +13,26 @@
           </div>
         <br>
     <hr>
-    <p> Miejsce na funkcję </p>   
+    <p>Oto podstrona do rysowania wykresów! Umożliwia ona narysowanie dwóch funkcji:<br>
+    logarytmicznej (dla logarytmu naturalnego - b&#8729;ln(a&#8729;x)) oraz wykładniczej (o podstawie równej liczbie Eulera - a&#8729;e<sup>b&#8729;x</sup>).<br>
+    Aby wyświetlić wykresy należy wprowadzić zmienne a i b, a następnie kliknąć przycisk "Rysuj!".<br>
+    Oprócz wykresów zostaną zaznaczone i wypisane punkty przecięcia (o ile istnieją).<br>
+    <u>Uwaga</u>: dla a = 0 logarytm nie istnieje, a funkcja wykładnicza jest stale równa 0.<br>
+    </p>
+    <form action="rysuj" method="post">
+        <div>
+            <div class="inputs">
+                <input type="number" name="a_input"> <p>Wprowadź a</p>
+                <input type="number" name="b_input"> <p>Wprowadź b</p>
+                <input type="submit" value="Narysuj!" id="rysuj" style="font-weight: bold; color: #555;">
+            </div>
+        {% if Rysowanie==False %}
+        <div style="display:block;"><img src="{{ url_for('static', filename='images/wow.png')}}" alt="Obraz z komunikatem opisującycm miejsce, w którym pojawi się wykres." width="700" height="500"></div>
+        {% endif %}
+        {% if Rysowanie==True %}
+        <div style="display:block;"><img src="{{plot}}" alt="Wykresy funkcji log i exp." width="700" height="500"></img><p>"{{info}}"</p></div>
+        {% endif %}
+    </div>
+    </form>   
     </body>
 </html>
