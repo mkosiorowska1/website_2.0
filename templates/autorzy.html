@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Project page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="active" href="#">Kontakt</a>
+            <a href="glowna">Strona główna</a>
+            <a href="funkcja">Funkcja</a>
+          </div>
+          <br>
+    <hr>
+    <br>
+    <h2> Dane kontaktowe autorów: </h2>
+    <h3>
+    <img src="{{ url_for('static', filename='images/post_icon.jpg')}}" width="32" height="32">
+    Zofia Berbelska<br>
+    e-mail: 268736@student.pwr.edu.pl<br><br>
+    <img src="{{ url_for('static', filename='images/post_icon.jpg')}}" width="32" height="32">
+    Marcelina Kosiorowska<br>
+    e-mail: 268772@student.pwr.edu.pl
+    </h3> 
+    </body>
+</html>

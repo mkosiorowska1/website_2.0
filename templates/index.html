@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Project page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='images/img1.jpg')}}" width="300">
+
+        <div class="navbar">
+            <a class="active" href="#">Strona główna</a>
+            <a href="funkcja">Funkcja</a>
+            <a href="autorzy">Kontakt</a>
+          </div>
+        <br>
+    <hr>
+    <h1><marquee> Witamy na naszej stronie! </marquee></h1><hr>
+    <p>Jak dobrze wiemy z lekcji matematyki funkcje logarytmiczne i wykładnicze
+    są ze sobą powiązane (funkcja logarytmiczna jest odwrotnością 
+    odpowiedniej funkcji wykładniczej). Ta strona powstała w celu przedstawienia i 
+    porównania tych funkcji na wykresach. Zapraszamy do zakładki "Funkcja" aby narysować
+    wykres według swoich własnych parametrów ;) <br>
+    W zakładce "Kontakt" znajdują się dane kontaktowe
+    twórców strony. <br> Miłego korzystania!
+    </p>   
+    </body>
+</html>
