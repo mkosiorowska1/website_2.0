@@ -77,17 +77,12 @@ def glowna():
     return render_template("index.html")
 
 
-@app.route("/funkcja", methods=["POST", "GET"])
-def funkcja():
-    return render_template("funkcja.html", Rysowanie = False)
 
 @app.route("/autorzy")
 def autorzy():
 
     return render_template("autorzy.html")   
 
-@app.route("/rysuj", methods=["POST", "GET"])
-def rysuj():
-    return render_template("funkcja.html", plot = wykres()[0], info = wykres()[1], Rysowanie = True)
+
 
 
