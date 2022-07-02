@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 import base64
-import numpy as np
+import numpy
 import io
 
 
